@@ -1,0 +1,78 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #2ecc71;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.header-container {
+  text-align: center;
+  height: 100px;
+}
+
+.logo {
+  height: 100px;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.background {
+  max-width: 100%;
+  width: 100%;
+}
+
+.background-container::after {
+  background: rgba(46, 204, 113, 0.25);
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
