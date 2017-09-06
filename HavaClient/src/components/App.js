@@ -13,14 +13,23 @@ export default class App extends Component {
 
                     </div>
                 </div>
-                <div className="landing">
+                <div className="landing-container">
                     <div className="background-container">
-                        <img className="background" src="/static/images/market.jpg" />
+                        <img className="background1" src="/static/images/market1.png" />
+                        <img className="background2" src="/static/images/market2.png" />
+                        <img className="background3" src="/static/images/market3.png" />
+                        <img className="background4" src="/static/images/market4.png" />
+                        <div className="background"></div>
+                        <h1 className="background-title">Bringing Farming Back<br />to the Community</h1>
                         {/*<video autoplay className="background" loop>*/}
                             {/*<source src="/static/images/market.mp4" type="video/mp4" />*/}
                             {/**/}
                         {/*</video>*/}
                     </div>
+                </div>
+                <div className="value-container">
+                    <img src="/static/images/under_construct.png" />
+                    <h2>We will be back soon with a FRESH look!</h2>
                 </div>
 
             </div>
